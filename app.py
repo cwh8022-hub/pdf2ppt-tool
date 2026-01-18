@@ -19,7 +19,7 @@ if uploaded_file and st.button("🚀 開始轉換並存入 Google Drive"):
         try:
             # 1. 使用 Python 強大的 poppler 引擎渲染 PDF
             # dpi=150 是畫質與速度的最佳平衡點
-            images = convert_from_bytes(uploaded_file.read(), dpi=150)
+            images = convert_from_bytes(uploaded_file.read(), dpi=200)
             
             base64_images = []
             for img in images:
